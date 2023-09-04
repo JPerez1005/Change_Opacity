@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Opacity On Scroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header_bg">
+        <h2>Change Opacity on scroll</h2>
+    </div>
+    <section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, amet autem? Quibusdam aperiam quam voluptates adipisci aut impedit nam quod?</p>
+        <br><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error aspernatur in incidunt perferendis sit sequi laboriosam nemo omnis tenetur quos.</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $('.header_bg').css('opacity',1-
+                    $(window).scrollTop()/500)
+            })
+        })
+    </script>
+</body>
+</html>
